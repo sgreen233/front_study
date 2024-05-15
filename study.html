@@ -1,11 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
+<!--可加属性 <title>, <style>, <meta>, <link>, <script>, <noscript> 和 <base>-->
+
 <meta charset="utf-8">
 <title>this is new try</title>
 <!-- 测试css -->
 <body>
-<div class="box">hello</div>
+
+<p>
+    <em>强调语气</em>
+    <br>
+    <strong>强调语句</strong>
+</p>
+
+<p>
+    <p id = 'tips'>hello</p>
+    <a name = "section2"></a>
+    <!-- target表示链接打开方式，新链接或者新窗口 -->
+    <a href="https://www.runoob.com/" target = "_blank">这是一个链接</a>
+    <a href = "https://www.example.com">
+        <img src = "example.jpg" alt = "示例图片">
+    </a>
+</p> 
+<p>
+    <a href="#section2">跳转到第二部分</a>
+    <!--下载属性-->
+    <a href = "example.jpg" download>下载图片</a>
+    <!--通过id进行跳转的方式-->
+    
+    <a href="#tips">访问hello</a>
+    <!--可以通过链接的方式访问另一个页面的链接-->
+    <a href = "https://www.runoob.com/html/html-links.html#tips">
+        访问另一个网站
+    </a>
+
+</p>
+<!-- <div class="box">hello</div>
 
 <style>
 body{
@@ -18,7 +49,7 @@ body{
     height: 50px;
     background-color: #e3cbcb;
 }
-</style>
+</style> -->
 
 </body>
 </head>    
