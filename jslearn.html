@@ -23,6 +23,28 @@
     </script>
     <button type="button" onclick="first()">click</button>
 
+    <script>
+        var name = "Nich";
+        let age = 26;
+    </script>
+    <script>
+        var name = "Nich";
+        //let age = 36;  由于不会检测块变量，因此报错，需要自己手动检查是否定义该变量
+        //使用try catch和typeof也无法解决因为该作用域仅限于该块
+        if(typeof age === 'undefined') {
+            let age = 36;
+            console.log(age);
+        }else console.log("has already define");
+        for(let i = 0;i<5;i++){
+            setTimeout(()=>console.log(i), 0);
+        }
+
+
+
+    </script>
+
+
+
 </body>
 
 </html>
