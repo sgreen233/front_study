@@ -153,6 +153,48 @@ p {color:blue;}
 1. background-color 定义元素背景颜色
 2. background-image 定义元素背景图像,背景图像时平铺展示，覆盖整个元素实体 ->[实例](#定义元素背景图像)
 3. background-repeat 设置元素只在特定方向上平铺。
+repeat-x:x方向上重复
+repeat-y:y方向上重复
+no-repeat:表示都不重复
+4. background-position 设置图片位置
+- 可以设置两个参数，如right top,代表坐标xy
+5. background-attachment 设置背景图像是否固定或者虽页面的其余部分滚动。
+- scroll 随页面滚动而滚动
+- fixed 背景图片不会随着页面的滚动而滚动
+- local 随着元素内容的滚动而滚动
+- initial 默认值
+- inherit 制定其设置从父元素继承
+6. background-blend-mode设置背景叠加模式，有正片叠底一类的，主要和ps中的叠加方式很像。
+### 文本格式
+1. color 设置颜色
+2. text-align 设置对其方式
+- center 居中，right，left
+- justify 每一行被展开为宽度相等，左右外边距是对齐的。
+3. text-decoration 设置或删除文本装饰
+主要用来删除链接的下划线 ->[实例](#设置文本装饰)
+也可以给文本设置上面划线，下划线和划除线
+4. text-transform 转换文本大小写
+- uppercase 转大写
+- lowercase 转小写
+- capitalize 首字母大写
+5. text-indent 文本缩进，用px表示
+
+| 属性                                                         | 描述                     |
+| :----------------------------------------------------------- | :----------------------- |
+| [color](https://www.runoob.com/cssref/pr-text-color.html)    | 设置文本颜色             |
+| [direction](https://www.runoob.com/cssref/pr-text-direction.html) | 设置文本方向。           |
+| [letter-spacing](https://www.runoob.com/cssref/pr-text-letter-spacing.html) | 设置字符间距             |
+| [line-height](https://www.runoob.com/cssref/pr-dim-line-height.html) | 设置行高                 |
+| [text-align](https://www.runoob.com/cssref/pr-text-text-align.html) | 对齐元素中的文本         |
+| [text-decoration](https://www.runoob.com/cssref/pr-text-text-decoration.html) | 向文本添加修饰           |
+| [text-indent](https://www.runoob.com/cssref/pr-text-text-indent.html) | 缩进元素中文本的首行     |
+| [text-shadow](https://www.runoob.com/cssref/css3-pr-text-shadow.html) | 设置文本阴影             |
+| [text-transform](https://www.runoob.com/cssref/pr-text-text-transform.html) | 控制元素中的字母         |
+| [unicode-bidi](https://www.runoob.com/cssref/pr-text-unicode-bidi.html) | 设置或返回文本是否被重写 |
+| [vertical-align](https://www.runoob.com/cssref/pr-pos-vertical-align.html) | 设置元素的垂直对齐       |
+| [white-space](https://www.runoob.com/cssref/pr-text-white-space.html) | 设置元素中空白的处理方式 |
+| [word-spacing](https://www.runoob.com/cssref/pr-text-word-spacing.html) | 设置字间距               |
+### 链接样式
 
 
 
@@ -186,7 +228,6 @@ body{
 }
 ```
 设置效果
-<center class = "half">
-<img src = “picture/1.png”  width = “50%” align = left><img src = “picture/2.png”  width = “50%” align = right>
-</center>
-![tup](picture/1.png)
+![图片1](picture/1.png) ![图片2](picture/2.png)
+
+### 设置文本装饰
