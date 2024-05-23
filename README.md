@@ -195,12 +195,29 @@ no-repeat:表示都不重复
 | [white-space](https://www.runoob.com/cssref/pr-text-white-space.html) | 设置元素中空白的处理方式 |
 | [word-spacing](https://www.runoob.com/cssref/pr-text-word-spacing.html) | 设置字间距               |
 ### 链接样式
+1. 链接属性
+链接不同属性有不同的定义值，因此，使用相应的定义值，就能分别定义不同的链接属性：
+- a:link - 正常，未访问过的链接
+- a:visited - 用户已访问过的链接
+- a:hover - 当用户鼠标放在链接上时
+- a:active - 链接被点击的那一刻
+注意： a:hover 必须在 a:link 和 a:visited 之后，需要严格按顺序才能看到效果。
+->[实例](链接属性)
+### 表格属性
+1. boder 制定边框粗细，样式，颜色
+2. border-collapse 单一边框隔开，不用的话会有双边框
+3. weight，height定义宽度和高度，可以使用百分比
+4. text-align 文字对齐
+5. vertical-align 设置垂直对齐
+6. padding 设置边距，是组件和外部的边距
+7. background-color 设置背景颜色
+8. color 设置文字颜色
 
-
-
+注意： a:active 必须在 a:hover 之后。
+2. text-decoration 删除下划线
+3. background-color 背景颜色
 
 ## 实例处
-
 ### id索引
 ```css
 #para1{
@@ -230,4 +247,10 @@ body{
 设置效果
 ![图片1](picture/1.png) ![图片2](picture/2.png)
 
-### 设置文本装饰
+### 链接属性
+```css
+a:link {color:#000000;}      /* 未访问链接*/
+a:visited {color:#00FF00;}  /* 已访问链接 */
+a:hover {color:#FF00FF;}  /* 鼠标移动到链接上 */
+a:active {color:#0000FF;}  /* 鼠标点击时 */
+```
