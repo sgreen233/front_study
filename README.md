@@ -1,4 +1,7 @@
 # front_study
+
+[CSS属性表](#css属性表)
+
 ## 速查文档
 ### HTML 基本文档
 ```html
@@ -132,3 +135,57 @@ p {color:blue;}
 &gt; 等同于 >
 &#169; 等同于 ©
 ```
+
+
+
+## CSS属性表
+
+### id和class选择器
+1. id选择器可以为有id属性的进行设置其属性。
+注意这个不能重名 ->[实例](#id索引)
+2. class可以重名，用.进行索引 ->[实例](#class索引)
+
+也可以使用元素名进行索引，如p。
+### 多重样式优先级
+内联样式>内部样式>外部样式>浏览器默认样式
+
+### 背景设置
+1. background-color 定义元素背景颜色
+2. background-image 定义元素背景图像,背景图像时平铺展示，覆盖整个元素实体 ->[实例](#定义元素背景图像)
+3. background-repeat 设置元素只在特定方向上平铺。
+
+
+
+
+## 实例处
+
+### id索引
+```css
+#para1{
+  text-align:center;
+  color:red;
+}
+```
+### class索引
+```css
+.center{text-align:center;
+}
+```
+### 定义元素背景图像
+```css
+body{
+  background-image:url('paper.gif');
+}
+```
+
+### 设置特定方向平铺
+```css
+body{
+  background-image:url('paper.gif');
+  background-repeat:repeat-x;
+}
+```
+设置效果
+<center class = "half">
+<img src = “picture/1.png”  width = “50%” align = left><img src = “picture/2.png”  width = “50%” align = right>
+</center>
