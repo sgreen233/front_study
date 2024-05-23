@@ -189,3 +189,4 @@ body{
 <center class = "half">
 <img src = “picture/1.png”  width = “50%” align = left><img src = “picture/2.png”  width = “50%” align = right>
 </center>
+![tup](picture/1.png)
